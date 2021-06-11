@@ -1,5 +1,9 @@
 # Motocross
 
+こちらのページでプレイできます。
+https://game.nicovideo.jp/atsumaru/games/gm20577?key=63995490bbea
+
+
 [Akashic Engine](https://akashic-games.github.io/) で作られたミニゲームです。
 
 ![スクリーンショット](./img/screenshot.png)
