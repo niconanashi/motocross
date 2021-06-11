@@ -25,15 +25,15 @@ var commonDefine;
     /** 結果画面でリトライ操作を受け付けるフラグ */
     commonDefine.ENABLE_RETRY = false;
     /** 残り時間警告の点滅時間：OFF→ON */
-    commonDefine.CAUTION_TIME_ON = 1600;
+    commonDefine.CAUTION_TIME_ON = 5;
     /** 残り時間警告の点滅時間：ON→OFF */
-    commonDefine.CAUTION_TIME_OFF = 200;
+    commonDefine.CAUTION_TIME_OFF = 40;
     /** 残り時間警告の赤点滅の色 */
-    commonDefine.CAUTION_FILLRECT_COLOR = "#000044";
+    commonDefine.CAUTION_FILLRECT_COLOR = "red";
     /** 残り時間警告の赤点滅の不透明度：OFF */
-    commonDefine.CAUTION_FILLRECT_OPACITY_OFF = 0.0;
+    commonDefine.CAUTION_FILLRECT_OPACITY_OFF = 0.1;
     /** 残り時間警告の赤点滅の不透明度：ON */
-    commonDefine.CAUTION_FILLRECT_OPACITY_ON = 1.0;
+    commonDefine.CAUTION_FILLRECT_OPACITY_ON = 0.3;
     /** 残り時間警告の時間表示のスケール：OFF */
     commonDefine.CAUTION_TIME_SCALE_OFF = 1.0;
     /** 残り時間警告の時間表示のスケール：ON */

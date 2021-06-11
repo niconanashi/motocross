@@ -7,21 +7,21 @@ var assetInfo_1 = require("./assetInfo");
 var define;
 (function (define) {
     /** デバッグ用：タッチしている間PCが上昇するようにするフラグ */
-    define.DEBUG_HOLD_TO_UP = true;
+    define.DEBUG_HOLD_TO_UP = false;
     /** デバッグ用：障害物にあたらなくするフラグ */
     define.DEBUG_COLLISION = false;
     /** デバッグ用：あたり判定範囲を表示するフラグ */
     define.DEBUG_SHOW_COLLISION_RECT = false;
     /** デバッグ用：あたり判定範囲表示の色 */
-    define.DEBUG_COLLISION_RECT_COLOR = "#9999C2";
+    define.DEBUG_COLLISION_RECT_COLOR = "red";
     /** デバッグ用：あたり判定範囲表示の不透明度 */
-    define.DEBUG_COLLISION_RECT_OPACITY = 0.9;
+    define.DEBUG_COLLISION_RECT_OPACITY = 0.2;
     /** 制限時間[秒] */
-    define.GAME_TIME = 60;
+    define.GAME_TIME = 40;
     /** このゲームが許容する最長の制限時間[秒] */
     define.GAME_TIME_MAX = 99;
     /** 残り時間警告が始まる残り時間[秒]（この時間未満になった時に始まる） */
-    define.CAUTION_TIME_CONDITION = 60;
+    define.CAUTION_TIME_CONDITION = 10;
     /** 横解像度を480から640に変更した際のX座標オフセット値 */
     define.OFFSET_X = (640 - 480) / 2;
     /** ゲーム中の数字の桁数 */
@@ -47,21 +47,21 @@ var define;
     /** UIアイコン（pt）のY座標 */
     define.ICON_PT_Y = 0;
     /** PC/波/水面のX座標 */
-    define.SURFING_X = 0;
+    define.SURFING_X = -100;
     /** PC/波/水面のY座標 */
-    define.SURFING_Y = 0;
+    define.SURFING_Y = 30;
     /** PCのアタッチ先ボーン名 */
     define.PC_PIVOT_NAME = "pc_null";
     /** ミスからの復帰後の無敵時間[フレーム] */
     define.RUNUP_FRAMES = 40;
     /** タッチ時に設定される上昇時間[フレーム] */
-    define.UP_FRAMES_PER_TOUCH = 8;
+    define.UP_FRAMES_PER_TOUCH = 20;
     /** タッチ時に設定されるタッチ受付不能時間[フレーム] */
-    define.TOUCH_COOLING_FRAMES = 1;
+    define.TOUCH_COOLING_FRAMES = 40;
     /** 上昇アニメの再生速度 */
-    define.PLAYSPEED_UP = 0.3;
+    define.PLAYSPEED_UP = 1.0;
     /** 下降アニメの再生速度 */
-    define.PLAYSPEED_DOWN = 0.3;
+    define.PLAYSPEED_DOWN = 0.8;
     /** スクロール速度[px/フレーム]：分子 */
     define.SCROLL_PX_PER_FRAME_NUM = 70 * 160 * 2;
     /** スクロール速度[px/フレーム]：分母 */
@@ -73,7 +73,7 @@ var define;
     /** SCROLL_PX_PER_FRAME_NUMを基準とした最大速度 */
     define.SCROLL_FACTOR_MAX = 2;
     /** 最大速度に対応するPCせり出し量[px] */
-    define.PC_OVERHANG_MAX = 100;
+    define.PC_OVERHANG_MAX = 90;
     /** 障害物の表示を開始する画面右端からのピクセル距離 */
     define.OBSTACLE_APPEAR_AREA_WIDTH = 480;
     /** 障害物の表示を終了する画面左端からのピクセル距離 */
@@ -84,7 +84,7 @@ var define;
     define.PTERANODON_PIVOT_NAME = "obstacle_pteranodon_01_1";
     /** PCのあたり判定矩形 */
     define.COLLISION_PC = {
-        x: -9 + 3, y: -30, width: 18 - 8, height: 35 - 9
+        x: -9 + 9, y: -30, width: 8 - 0, height: 35 - 20
     };
     /** 障害物のあたり判定矩形配列：カモメ */
     define.COLLISIONS_GULL = [
@@ -96,8 +96,8 @@ var define;
     ];
     /** 障害物のあたり判定矩形配列：サメ */
     define.COLLISIONS_SHARK = [
-        { x: 34, y: 100, width: 147, height: 54 },
-        { x: 96, y: 100, width: 28, height: 84 }
+        { x: 50, y: -65, width: 80, height: 30 },
+        { x: 110, y: -85, width: 5, height: 30 }
     ];
     /** 障害物のあたり判定矩形配列：プテラノドン */
     define.COLLISIONS_PTERANODON = [
