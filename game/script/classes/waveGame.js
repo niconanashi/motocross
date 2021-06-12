@@ -262,6 +262,7 @@ var WaveGame = /** @class */ (function (_super) {
         this.scene.pointDownCapture.removeAll(this);
         if (define_1.define.DEBUG_HOLD_TO_UP) {
             this.scene.pointUpCapture.removeAll(this);
+        
         }
         gameUtil_1.gameUtil.setGameScore(this.scoreValue);
         // 呼び出すトリガーによって共通フローのジングルアニメが変化する
@@ -273,6 +274,14 @@ var WaveGame = /** @class */ (function (_super) {
         else {
             this.timeup.fire();
         }
+        if (typeof window !== "undefined" && window.RPGAtsumaru) {
+  var scoreboards = window.RPGAtsumaru.experimental.scoreboards;
+  scoreboards.setRecord(1, g.game.vars.gameState.score).then(function () {
+    window.setTimeout(function(){
+    scoreboards.display(1);
+    }, 8000);
+  });
+}
     };
     /**
      * Scene#pointDownCaptureのハンドラ
@@ -311,5 +320,6 @@ var WaveGame = /** @class */ (function (_super) {
         return false;
     };
     return WaveGame;
+    
 }(gameBase_1.GameBase));
 exports.WaveGame = WaveGame;
