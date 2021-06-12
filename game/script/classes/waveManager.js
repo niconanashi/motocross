@@ -151,7 +151,7 @@ var WaveManager = /** @class */ (function (_super) {
         var middle = (downFrames - 1) * 0.5;
         var diff = Math.abs(framePosition - middle);
         var factor = (middle - diff) / middle;
-        return (factor < 0) ? 0 : (factor > 1) ? 2 : factor;
+        return (factor < 0) ? 0 : (factor > 1) ? 1 : factor;
     };
     /**
      * フレームごとの処理を行うメソッド
