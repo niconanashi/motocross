@@ -6,7 +6,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var commonDefine;
 (function (commonDefine) {
     /** 背景透過部分の黒アルファの不透明度 */
-    commonDefine.BG_SHADE_OPACITY = 1.0;
+    commonDefine.BG_SHADE_OPACITY = 0.2;
     /** デバッグ用：タイトル画面/説明画面をスキップするフラグ */
     commonDefine.DEBUG_SKIP_PREGAMESUBSCENE = false;
     /**
@@ -17,7 +17,7 @@ var commonDefine;
     /** ゲーム開始情報画面開始からタイトル画面に遷移するまでの時間[ms] */
     commonDefine.INFORMATION_WAIT = 7000;
     /** タイトル画面開始から説明画面に遷移するまでの時間[ms] */
-    commonDefine.TITLE_WAIT = 4000;
+    commonDefine.TITLE_WAIT = 5000;
     /** 説明画面開始からゲーム画面に遷移するまでの時間[ms] */
     commonDefine.DESCRIPTION_WAIT = 6000;
     /** タイムアップ後リザルト画面に遷移するまでの時間[ms] */
@@ -27,13 +27,13 @@ var commonDefine;
     /** 残り時間警告の点滅時間：OFF→ON */
     commonDefine.CAUTION_TIME_ON = 5;
     /** 残り時間警告の点滅時間：ON→OFF */
-    commonDefine.CAUTION_TIME_OFF = 40;
+    commonDefine.CAUTION_TIME_OFF = 25;
     /** 残り時間警告の赤点滅の色 */
-    commonDefine.CAUTION_FILLRECT_COLOR = "red";
+    commonDefine.CAUTION_FILLRECT_COLOR = "#F34252";
     /** 残り時間警告の赤点滅の不透明度：OFF */
-    commonDefine.CAUTION_FILLRECT_OPACITY_OFF = 0.1;
+    commonDefine.CAUTION_FILLRECT_OPACITY_OFF = 0.2;
     /** 残り時間警告の赤点滅の不透明度：ON */
-    commonDefine.CAUTION_FILLRECT_OPACITY_ON = 0.3;
+    commonDefine.CAUTION_FILLRECT_OPACITY_ON = 0.5;
     /** 残り時間警告の時間表示のスケール：OFF */
     commonDefine.CAUTION_TIME_SCALE_OFF = 1.0;
     /** 残り時間警告の時間表示のスケール：ON */

@@ -131,57 +131,14 @@ var MainSceneController = /** @class */ (function (_super) {
         entityUtil_1.entityUtil.appendEntity(this.wipeLayer, _scene);
         this.wipeManager = new wipeManager_1.WipeManager(_scene);
         entityUtil_1.entityUtil.appendEntity(this.wipeManager, this.wipeLayer);
-        
-        
-        
-        
-        let date = new Date();
-               if(5 <= date.getHours() && date.getHours() <= 18)
-            
-            
-            
-       		//昼背景
-            {  var shade = new g.FilledRect({
-            
-            scene: _scene,
-            cssColor: "#A4C6FF",
-            opacity: commonDefine_1.commonDefine.BG_SHADE_OPACITY,
-            width: _scene.game.width,
-            height: _scene.game.height,
-            
-            
-            });
-            entityUtil_1.entityUtil.appendEntity(shade, this.mainLayer);
-            }
-            
-            
-            
-            //夜背景 
-            else{
-            var shade = new g.FilledRect({
-              
-            scene: _scene,
-            cssColor: "#000044",
-            opacity: commonDefine_1.commonDefine.BG_SHADE_OPACITY,
-            width: _scene.game.width,
-            height: _scene.game.height,
-            
-        });
-        entityUtil_1.entityUtil.appendEntity(shade, this.mainLayer);
-        }
-        
         var shade = new g.FilledRect({
             scene: _scene,
-            
-            x: -100,
-            y: 330,
-            width: 10000,
-    		height: 100,
-   		 cssColor: "#CD853F"
+            cssColor: "#000000",
+            opacity: commonDefine_1.commonDefine.BG_SHADE_OPACITY,
+            width: _scene.game.width,
+            height: _scene.game.height
         });
-		entityUtil_1.entityUtil.appendEntity(shade, this.mainLayer);
-        
-        
+        entityUtil_1.entityUtil.appendEntity(shade, this.mainLayer);
         var infoSubScene = this.informationSubscene = new informationSubscene_1.InformationSubscene(_scene);
         infoSubScene.init();
         infoSubScene.requestedNextSubscene.handle(this, this.goNextFromInformation);
