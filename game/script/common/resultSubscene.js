@@ -140,6 +140,7 @@ var ResultSubscene = /** @class */ (function (_super) {
     };
     /**
      * Scene#setTimeoutのハンドラ
+ 
      * ロール演出の終了時用
      */
     ResultSubscene.prototype.onRollEnd = function () {
@@ -151,6 +152,7 @@ var ResultSubscene = /** @class */ (function (_super) {
             // リトライ操作を受け付ける場合
             this.scene.pointDownCapture.handle(this, this.onTouch);
         }
+  
     };
     /**
      * Scene#pointDownCaptureのハンドラ
