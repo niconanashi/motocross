@@ -839,7 +839,7 @@
                 {
                  "gid":4,
                  "height":110,
-                 "id":300,
+                 "id":1,
                  "name":"shark",
                  "properties":
                     {
@@ -855,7 +855,7 @@
                 {
                  "gid":4,
                  "height":110,
-                 "id":302,
+                 "id":2,
                  "name":"shark",
                  "properties":
                     {
@@ -871,7 +871,7 @@
                 {
                  "gid":4,
                  "height":110,
-                 "id":303,
+                 "id":3,
                  "name":"shark",
                  "properties":
                     {
@@ -887,7 +887,7 @@
                 {
                  "gid":4,
                  "height":110,
-                 "id":304,
+                 "id":4,
                  "name":"shark",
                  "properties":
                     {
@@ -903,7 +903,7 @@
                 {
                  "gid":4,
                  "height":110,
-                 "id":306,
+                 "id":5,
                  "name":"shark",
                  "properties":
                     {
@@ -919,7 +919,7 @@
                 {
                  "gid":4,
                  "height":110,
-                 "id":307,
+                 "id":6,
                  "name":"shark",
                  "properties":
                     {
@@ -935,7 +935,7 @@
                 {
                  "gid":4,
                  "height":110,
-                 "id":308,
+                 "id":7,
                  "name":"shark",
                  "properties":
                     {
@@ -951,7 +951,7 @@
                 {
                  "gid":4,
                  "height":110,
-                 "id":309,
+                 "id":8,
                  "name":"shark",
                  "properties":
                     {
@@ -961,13 +961,13 @@
                  "type":"enemy_03",
                  "visible":true,
                  "width":248,
-                 "x":2850,
+                 "x":2860,
                  "y":390
                 }, 
                 {
                  "gid":4,
                  "height":110,
-                 "id":310,
+                 "id":9,
                  "name":"shark",
                  "properties":
                     {
@@ -977,13 +977,13 @@
                  "type":"enemy_03",
                  "visible":true,
                  "width":248,
-                 "x":2950,
+                 "x":2960,
                  "y":390
                 }, 
                 {
                  "gid":4,
                  "height":110,
-                 "id":311,
+                 "id":10,
                  "name":"shark",
                  "properties":
                     {
@@ -999,7 +999,7 @@
                 {
                  "gid":4,
                  "height":110,
-                 "id":312,
+                 "id":11,
                  "name":"shark",
                  "properties":
                     {
@@ -1015,7 +1015,7 @@
                 {
                  "gid":4,
                  "height":110,
-                 "id":313,
+                 "id":12,
                  "name":"shark",
                  "properties":
                     {
@@ -1031,7 +1031,7 @@
                 {
                  "gid":4,
                  "height":110,
-                 "id":314,
+                 "id":13,
                  "name":"shark",
                  "properties":
                     {
@@ -1047,7 +1047,7 @@
                 {
                  "gid":4,
                  "height":110,
-                 "id":315,
+                 "id":14,
                  "name":"shark",
                  "properties":
                     {
@@ -1063,7 +1063,7 @@
                 {
                  "gid":4,
                  "height":110,
-                 "id":318,
+                 "id":15,
                  "name":"shark",
                  "properties":
                     {
@@ -1079,7 +1079,7 @@
                 {
                  "gid":4,
                  "height":110,
-                 "id":319,
+                 "id":16,
                  "name":"shark",
                  "properties":
                     {
@@ -1095,7 +1095,7 @@
                 {
                  "gid":4,
                  "height":110,
-                 "id":321,
+                 "id":17,
                  "name":"shark",
                  "properties":
                     {
@@ -1111,7 +1111,7 @@
                 {
                  "gid":4,
                  "height":110,
-                 "id":324,
+                 "id":18,
                  "name":"shark",
                  "properties":
                     {
@@ -1127,7 +1127,7 @@
                 {
                  "gid":4,
                  "height":110,
-                 "id":325,
+                 "id":19,
                  "name":"shark",
                  "properties":
                     {
@@ -1143,7 +1143,7 @@
                 {
                  "gid":4,
                  "height":110,
-                 "id":326,
+                 "id":20,
                  "name":"shark",
                  "properties":
                     {
@@ -1161,7 +1161,7 @@
                 {
                  "gid":4,
                  "height":110,
-                 "id":447,
+                 "id":21,
                  "name":"shark",
                  "properties":
                     {
@@ -1178,7 +1178,7 @@
                 {
                  "gid":4,
                  "height":110,
-                 "id":450,
+                 "id":22,
                  "name":"shark",
                  "properties":
                     {
@@ -1196,7 +1196,7 @@
                 {
                  "gid":4,
                  "height":110,
-                 "id":468,
+                 "id":23,
                  "name":"shark",
                  "properties":
                     {
@@ -1213,7 +1213,7 @@
                 {
                  "gid":4,
                  "height":110,
-                 "id":473,
+                 "id":24,
                  "name":"shark",
                  "properties":
                     {
@@ -1230,7 +1230,7 @@
                 {
                  "gid":4,
                  "height":110,
-                 "id":507,
+                 "id":25,
                  "name":"shark",
                  "properties":
                     {
@@ -1246,7 +1246,7 @@
                 {
                  "gid":4,
                  "height":110,
-                 "id":508,
+                 "id":26,
                  "name":"shark",
                  "properties":
                     {
@@ -1262,7 +1262,7 @@
                 {
                  "gid":4,
                  "height":110,
-                 "id":509,
+                 "id":27,
                  "name":"shark",
                  "properties":
                     {
@@ -1278,7 +1278,7 @@
                 {
                  "gid":4,
                  "height":110,
-                 "id":510,
+                 "id":28,
                  "name":"shark",
                  "properties":
                     {
@@ -1295,7 +1295,7 @@
                 {
                  "gid":4,
                  "height":110,
-                 "id":547,
+                 "id":29,
                  "name":"shark",
                  "properties":
                     {
@@ -1312,7 +1312,7 @@
                 {
                  "gid":4,
                  "height":110,
-                 "id":553,
+                 "id":30,
                  "name":"shark",
                  "properties":
                     {
@@ -1329,7 +1329,7 @@
                 {
                  "gid":4,
                  "height":110,
-                 "id":575,
+                 "id":31,
                  "name":"shark",
                  "properties":
                     {
@@ -1345,7 +1345,7 @@
                 {
                  "gid":4,
                  "height":110,
-                 "id":577,
+                 "id":32,
                  "name":"shark",
                  "properties":
                     {
@@ -1362,7 +1362,7 @@
                 {
                  "gid":4,
                  "height":110,
-                 "id":582,
+                 "id":33,
                  "name":"shark",
                  "properties":
                     {
@@ -1379,7 +1379,7 @@
                 {
                  "gid":4,
                  "height":110,
-                 "id":598,
+                 "id":34,
                  "name":"shark",
                  "properties":
                     {
@@ -1396,7 +1396,7 @@
                 {
                  "gid":4,
                  "height":110,
-                 "id":632,
+                 "id":35,
                  "name":"shark",
                  "properties":
                     {
@@ -1406,7 +1406,7 @@
                  "type":"enemy_03",
                  "visible":true,
                  "width":248,
-                 "x":10700,
+                 "x":10900,
                  "y":390
                 }, 
                 {
@@ -1505,22 +1505,6 @@
                  "x":13000,
                  "y":360
                 }, 
-                 {
-                 "gid":4,
-                 "height":110,
-                 "id":637,
-                 "name":"shark",
-                 "properties":
-                    {
-
-                    },
-                 "rotation":0,
-                 "type":"enemy_03",
-                 "visible":true,
-                 "width":248,
-                 "x":13500,
-                 "y":360
-                }, 
                 
                 {
                  "gid":4,
@@ -1570,23 +1554,6 @@
                  "visible":true,
                  "width":248,
                  "x":14100,
-                 "y":360
-                }, 
-               
-                {
-                 "gid":4,
-                 "height":110,
-                 "id":637,
-                 "name":"shark",
-                 "properties":
-                    {
-
-                    },
-                 "rotation":0,
-                 "type":"enemy_03",
-                 "visible":true,
-                 "width":248,
-                 "x":14300,
                  "y":360
                 },
                 
@@ -1793,6 +1760,23 @@
                  "x":17200,
                  "y":370
                 }, 
+               
+                {
+                 "gid":4,
+                 "height":110,
+                 "id":637,
+                 "name":"shark",
+                 "properties":
+                    {
+
+                    },
+                 "rotation":0,
+                 "type":"enemy_03",
+                 "visible":true,
+                 "width":248,
+                 "x":18050,
+                 "y":400
+                }, 
                 
                  {
                  "gid":4,
@@ -1807,9 +1791,94 @@
                  "type":"enemy_03",
                  "visible":true,
                  "width":248,
-                 "x":17800,
-                 "y":350
-                } 
+                 "x":18350,
+                 "y":310
+                }, 
+               
+                {
+                 "gid":4,
+                 "height":110,
+                 "id":637,
+                 "name":"shark",
+                 "properties":
+                    {
+
+                    },
+                 "rotation":0,
+                 "type":"enemy_03",
+                 "visible":true,
+                 "width":248,
+                 "x":18300,
+                 "y":330
+                }, 
+               
+                {
+                 "gid":4,
+                 "height":110,
+                 "id":637,
+                 "name":"shark",
+                 "properties":
+                    {
+
+                    },
+                 "rotation":0,
+                 "type":"enemy_03",
+                 "visible":true,
+                 "width":248,
+                 "x":18400,
+                 "y":330
+                }, 
+                
+                 {
+                 "gid":4,
+                 "height":110,
+                 "id":637,
+                 "name":"shark",
+                 "properties":
+                    {
+
+                    },
+                 "rotation":0,
+                 "type":"enemy_03",
+                 "visible":true,
+                 "width":248,
+                 "x":18250,
+                 "y":360
+                }, 
+                
+                 {
+                 "gid":4,
+                 "height":110,
+                 "id":637,
+                 "name":"shark",
+                 "properties":
+                    {
+
+                    },
+                 "rotation":0,
+                 "type":"enemy_03",
+                 "visible":true,
+                 "width":248,
+                 "x":18350,
+                 "y":365
+                }, 
+               
+                {
+                 "gid":4,
+                 "height":110,
+                 "id":637,
+                 "name":"shark",
+                 "properties":
+                    {
+
+                    },
+                 "rotation":0,
+                 "type":"enemy_03",
+                 "visible":true,
+                 "width":248,
+                 "x":18450,
+                 "y":360
+                }    
                
                
                
