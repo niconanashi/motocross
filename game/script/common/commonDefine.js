@@ -17,9 +17,9 @@ var commonDefine;
     /** ゲーム開始情報画面開始からタイトル画面に遷移するまでの時間[ms] */
     commonDefine.INFORMATION_WAIT = 7000;
     /** タイトル画面開始から説明画面に遷移するまでの時間[ms] */
-    commonDefine.TITLE_WAIT = 4000;
+    commonDefine.TITLE_WAIT = 5000;
     /** 説明画面開始からゲーム画面に遷移するまでの時間[ms] */
-    commonDefine.DESCRIPTION_WAIT = 6000;
+    commonDefine.DESCRIPTION_WAIT = 10000;
     /** タイムアップ後リザルト画面に遷移するまでの時間[ms] */
     commonDefine.TIMEUP_WAIT = 3000;
     /** 結果画面でリトライ操作を受け付けるフラグ */

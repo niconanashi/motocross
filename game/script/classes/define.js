@@ -57,7 +57,7 @@ var define;
     /** タッチ時に設定される上昇時間[フレーム] */
     define.UP_FRAMES_PER_TOUCH = 20;
     /** タッチ時に設定されるタッチ受付不能時間[フレーム] */
-    define.TOUCH_COOLING_FRAMES = 40;
+    define.TOUCH_COOLING_FRAMES = 41;
     /** 上昇アニメの再生速度 */
     define.PLAYSPEED_UP = 1.0;
     /** 下降アニメの再生速度 */
@@ -84,7 +84,7 @@ var define;
     define.PTERANODON_PIVOT_NAME = "obstacle_pteranodon_01_1";
     /** PCのあたり判定矩形 */
     define.COLLISION_PC = {
-        x: -9 + 9, y: -30, width: 8 - 0, height: 35 - 20
+        x: -9 + 9, y: -30, width: 18 - 0, height: 35 - 20
     };
     /** 障害物のあたり判定矩形配列：カモメ */
     define.COLLISIONS_GULL = [
@@ -96,8 +96,15 @@ var define;
     ];
     /** 障害物のあたり判定矩形配列：サメ */
     define.COLLISIONS_SHARK = [
-        { x: 50, y: -65, width: 80, height: 30 },
-        { x: 110, y: -85, width: 5, height: 30 }
+        { x: 100, y: -85, width: 5, height: 30 },
+        { x: 89, y: -75, width: 5, height: 30 },
+        { x: 78, y: -65, width: 5, height: 30 },
+        { x: 67, y: -55, width: 5, height: 30 },
+        { x: 56, y: -45, width: 5, height: 30 },
+        { x: 45, y: -35, width: 5, height: 30 },
+        { x: 34, y: -25, width: 5, height: 30 }
+    
+    
     ];
     /** 障害物のあたり判定矩形配列：プテラノドン */
     define.COLLISIONS_PTERANODON = [
