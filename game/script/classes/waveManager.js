@@ -193,6 +193,11 @@ var WaveManager = /** @class */ (function (_super) {
         }
         if (this.waveState === WaveState.UP) {
             --this.upCount;
+            // ウイリー角度
+            this.actorPC.angle -=1.5 ;
+            
+            
+            
             if ((this.upCount === 0) || (this.actorWave.currentFrame ===
                 (this.actorWave.animation.frameCount - 1))) {
                 this.upCount = 0;
@@ -200,10 +205,14 @@ var WaveManager = /** @class */ (function (_super) {
             }
         }
         else if (this.waveState === WaveState.DOWN) {
+                 this.actorPC.angle += 1 ;
+            
             if (this.actorWave.currentFrame ===
                 (this.actorWave.animation.frameCount - 1)) {
                 this.changeWaveState(WaveState.FLOOR);
+                this.actorPC.angle = 0
             }
+       
         }
         this.actorPC.modified();
         this.actorPC.calc();
@@ -222,6 +231,7 @@ var WaveManager = /** @class */ (function (_super) {
             (this.actorPC.animation.frameCount - 1)) {
             if (this.pcState === PcState.DAMAGE) {
                 // 復帰に移行する
+               this.actorPC.angle = 0 ;
                 if (this.waveState !== WaveState.FLOOR) {
                     this.actorWave.play(asaInfo_1.AsaInfo.surfing.anim.waveLowerMost, 0, true, 1);
                     this.waveState = WaveState.FLOOR;
