@@ -167,19 +167,20 @@ var WaveManager = /** @class */ (function (_super) {
     /**
      * タッチした結果を処理するメソッド
      */
-    WaveManager.prototype.onTouch = function () {
-        if (this.waveState !== WaveState.UP) {
+   WaveManager.prototype.onTouch = function () {
+        if (this.pcState === PcState.DAMAGE) {
             this.changeWaveState(WaveState.UP);
         }
-        this.upCount = define_1.define.UP_FRAMES_PER_TOUCH;
+        this.upCount = define_1.define.UP_FRAMES_PER_TOUCH *2;
     };
     /**
      * ミス時の処理を行うメソッド
      */
     WaveManager.prototype.onMiss = function () {
-        this.touchable = false;
-        this.actorPC.play(asaInfo_1.AsaInfo.surfing.anim.pcDamage, 0, false, 1);
-        this.pcState = PcState.DAMAGE;
+       if (this.waveState !== WaveState.UP) {
+            this.changeWaveState(WaveState.UP);
+        }
+        this.upCount = define_1.define.UP_FRAMES_PER_TOUCH ;
     };
     /**
      * 通常時のフレームごとの処理を行うメソッド
@@ -191,10 +192,26 @@ var WaveManager = /** @class */ (function (_super) {
                 this.actorPC.play(asaInfo_1.AsaInfo.surfing.anim.pcNormal, 0, true, 1);
             }
         }
+        
+        
+        
+        //
+        if (this.waveState === WaveState.FLOOR){ 
+            if (this.actorPC.angle < -5) {
+            this.actorPC.angle += 2 ;
+            }
+            else {
+                this.actorPC.angle = 0;
+            }
+        }
+        
+        
+        
+        
         if (this.waveState === WaveState.UP) {
             --this.upCount;
             // ウイリー角度
-            this.actorPC.angle -=1.5 ;
+            this.actorPC.angle -= 2;
             
             
             
@@ -205,12 +222,11 @@ var WaveManager = /** @class */ (function (_super) {
             }
         }
         else if (this.waveState === WaveState.DOWN) {
-                 this.actorPC.angle += 1 ;
+                 this.actorPC.angle += 1.5;
             
             if (this.actorWave.currentFrame ===
                 (this.actorWave.animation.frameCount - 1)) {
                 this.changeWaveState(WaveState.FLOOR);
-                this.actorPC.angle = 0
             }
        
         }
