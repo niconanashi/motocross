@@ -17,7 +17,7 @@ var define;
     /** デバッグ用：あたり判定範囲表示の不透明度 */
     define.DEBUG_COLLISION_RECT_OPACITY = 0.2;
     /** 制限時間[秒] */
-    define.GAME_TIME = 40;
+    define.GAME_TIME = 45;
     /** このゲームが許容する最長の制限時間[秒] */
     define.GAME_TIME_MAX = 99;
     /** 残り時間警告が始まる残り時間[秒]（この時間未満になった時に始まる） */
@@ -55,9 +55,9 @@ var define;
     /** ミスからの復帰後の無敵時間[フレーム] */
     define.RUNUP_FRAMES = 40;
     /** タッチ時に設定される上昇時間[フレーム] */
-    define.UP_FRAMES_PER_TOUCH = 20;
+    define.UP_FRAMES_PER_TOUCH = 5;
     /** タッチ時に設定されるタッチ受付不能時間[フレーム] */
-    define.TOUCH_COOLING_FRAMES = 41;
+    define.TOUCH_COOLING_FRAMES = 15;
     /** 上昇アニメの再生速度 */
     define.PLAYSPEED_UP = 1.0;
     /** 下降アニメの再生速度 */
@@ -71,7 +71,7 @@ var define;
     /** スクロール量とメートル値の比[m/px]：分母 */
     define.SCROLL_METER_PER_PX_DENOM = 1;
     /** SCROLL_PX_PER_FRAME_NUMを基準とした最大速度 */
-    define.SCROLL_FACTOR_MAX = 2;
+    define.SCROLL_FACTOR_MAX = 2.1;
     /** 最大速度に対応するPCせり出し量[px] */
     define.PC_OVERHANG_MAX = 90;
     /** 障害物の表示を開始する画面右端からのピクセル距離 */
@@ -84,7 +84,7 @@ var define;
     define.PTERANODON_PIVOT_NAME = "obstacle_pteranodon_01_1";
     /** PCのあたり判定矩形 */
     define.COLLISION_PC = {
-        x: -9 + 9, y: -30, width: 18 - 0, height: 35 - 20
+        x: -30 + 0, y: -15, width: 70 - 0, height: 35 - 20
     };
     /** 障害物のあたり判定矩形配列：カモメ */
     define.COLLISIONS_GULL = [
@@ -92,17 +92,17 @@ var define;
     ];
     /** 障害物のあたり判定矩形配列：岩 */
     define.COLLISIONS_ROCK = [
-        { x: 14, y: -295, width: 63, height: 180 }
+        
     ];
     /** 障害物のあたり判定矩形配列：サメ */
     define.COLLISIONS_SHARK = [
-        { x: 100, y: -85, width: 5, height: 30 },
-        { x: 89, y: -75, width: 5, height: 30 },
-        { x: 78, y: -65, width: 5, height: 30 },
-        { x: 67, y: -55, width: 5, height: 30 },
-        { x: 56, y: -45, width: 5, height: 30 },
-        { x: 45, y: -35, width: 5, height: 30 },
-        { x: 34, y: -25, width: 5, height: 30 }
+        { x: 90, y: -85, width: 30, height: 30 },
+        { x: 79, y: -75, width: 5, height: 30 },
+        { x: 68, y: -65, width: 5, height: 30 },
+        { x: 57, y: -55, width: 5, height: 30 },
+        { x: 46, y: -45, width: 5, height: 30 },
+        { x: 35, y: -35, width: 5, height: 30 },
+        { x: 24, y: -25, width: 5, height: 30 }
     
     
     ];
