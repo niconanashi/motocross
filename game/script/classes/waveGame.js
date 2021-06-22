@@ -274,14 +274,6 @@ var WaveGame = /** @class */ (function (_super) {
         else {
             this.timeup.fire();
         }
-        if (typeof window !== "undefined" && window.RPGAtsumaru) {
-  var scoreboards = window.RPGAtsumaru.experimental.scoreboards;
-  scoreboards.setRecord(1, g.game.vars.gameState.score).then(function () {
-    window.setTimeout(function(){
-    scoreboards.display(1);
-    }, 8000);
-  });
-}
     };
     /**
      * Scene#pointDownCaptureのハンドラ

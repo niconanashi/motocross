@@ -1,7 +1,7 @@
 {
 	"width": 640,
 	"height": 360,
-	"fps": 30,
+	"fps": 60,
 	"assets": {
 		"asaInfo": {
 			"type": "script",
@@ -669,9 +669,9 @@
 			"supportedModes": [
 				"ranking"
 			],
-      "preferredSessionParameters": {
-        "totalTimeLimit": 77
-      }
+			"preferredSessionParameters": {
+				"totalTimeLimit": 77
+			}
 		}
 	}
 }
