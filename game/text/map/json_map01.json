@@ -1725,6 +1725,57 @@
                  "width":248,
                  "x":14900,
                  "y":390
+                },
+                
+                 {
+                 "gid":4,
+                 "height":110,
+                 "id":637,
+                 "name":"shark",
+                 "properties":
+                    {
+
+                    },
+                 "rotation":0,
+                 "type":"enemy_03",
+                 "visible":true,
+                 "width":248,
+                 "x":15000,
+                 "y":390
+                },
+                
+                 {
+                 "gid":4,
+                 "height":110,
+                 "id":637,
+                 "name":"shark",
+                 "properties":
+                    {
+
+                    },
+                 "rotation":0,
+                 "type":"enemy_03",
+                 "visible":true,
+                 "width":248,
+                 "x":15100,
+                 "y":390
+                },
+                
+                 {
+                 "gid":4,
+                 "height":110,
+                 "id":637,
+                 "name":"shark",
+                 "properties":
+                    {
+
+                    },
+                 "rotation":0,
+                 "type":"enemy_03",
+                 "visible":true,
+                 "width":248,
+                 "x":15200,
+                 "y":390
                 },  
                 {
                  "gid":3,
@@ -2031,7 +2082,171 @@
                  "width":248,
                  "x":18450,
                  "y":360
-                }    
+                }, 
+               
+                {
+                 "gid":4,
+                 "height":110,
+                 "id":637,
+                 "name":"shark",
+                 "properties":
+                    {
+
+                    },
+                 "rotation":0,
+                 "type":"enemy_03",
+                 "visible":true,
+                 "width":248,
+                 "x":20150,
+                 "y":360
+                }, 
+               
+                {
+                 "gid":4,
+                 "height":110,
+                 "id":637,
+                 "name":"shark",
+                 "properties":
+                    {
+
+                    },
+                 "rotation":0,
+                 "type":"enemy_03",
+                 "visible":true,
+                 "width":248,
+                 "x":20450,
+                 "y":360
+                },  
+                {
+                 "gid":3,
+                 "height":300,
+                 "id":752,
+                 "name":"rock",
+                 "properties":
+                    {
+
+                    },
+                 "rotation":0,
+                 "type":"enemy_02",
+                 "visible":true,
+                 "width":88,
+                 "x":20850,
+                 "y":400
+                },  
+                {
+                 "gid":3,
+                 "height":300,
+                 "id":752,
+                 "name":"rock",
+                 "properties":
+                    {
+
+                    },
+                 "rotation":0,
+                 "type":"enemy_02",
+                 "visible":true,
+                 "width":88,
+                 "x":21000,
+                 "y":400
+                },  
+                {
+                 "gid":3,
+                 "height":300,
+                 "id":752,
+                 "name":"rock",
+                 "properties":
+                    {
+
+                    },
+                 "rotation":0,
+                 "type":"enemy_02",
+                 "visible":true,
+                 "width":88,
+                 "x":21150,
+                 "y":400
+                },  
+                {
+                 "gid":3,
+                 "height":300,
+                 "id":752,
+                 "name":"rock",
+                 "properties":
+                    {
+
+                    },
+                 "rotation":0,
+                 "type":"enemy_02",
+                 "visible":true,
+                 "width":88,
+                 "x":21300,
+                 "y":400
+                },  
+                {
+                 "gid":3,
+                 "height":300,
+                 "id":752,
+                 "name":"rock",
+                 "properties":
+                    {
+
+                    },
+                 "rotation":0,
+                 "type":"enemy_02",
+                 "visible":true,
+                 "width":88,
+                 "x":21450,
+                 "y":400
+                },  
+                {
+                 "gid":3,
+                 "height":300,
+                 "id":752,
+                 "name":"rock",
+                 "properties":
+                    {
+
+                    },
+                 "rotation":0,
+                 "type":"enemy_02",
+                 "visible":true,
+                 "width":88,
+                 "x":21750,
+                 "y":400
+                }, 
+               
+                {
+                 "gid":4,
+                 "height":110,
+                 "id":637,
+                 "name":"shark",
+                 "properties":
+                    {
+
+                    },
+                 "rotation":0,
+                 "type":"enemy_03",
+                 "visible":true,
+                 "width":248,
+                 "x":22300,
+                 "y":360
+                }, 
+               
+                {
+                 "gid":4,
+                 "height":110,
+                 "id":637,
+                 "name":"shark",
+                 "properties":
+                    {
+
+                    },
+                 "rotation":0,
+                 "type":"enemy_03",
+                 "visible":true,
+                 "width":248,
+                 "x":22950,
+                 "y":360
+                }        
                
                
                

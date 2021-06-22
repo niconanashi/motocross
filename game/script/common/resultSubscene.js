@@ -140,7 +140,6 @@ var ResultSubscene = /** @class */ (function (_super) {
     };
     /**
      * Scene#setTimeoutのハンドラ
- 
      * ロール演出の終了時用
      */
     ResultSubscene.prototype.onRollEnd = function () {
@@ -148,11 +147,21 @@ var ResultSubscene = /** @class */ (function (_super) {
         audioUtil_1.audioUtil.play(commonSoundInfo_1.CommonSoundInfo.seSet.rollResultFinish);
         this.isRolling = false;
         this.setScoreLabelText();
-        if (commonDefine_1.commonDefine.ENABLE_RETRY) {
-            // リトライ操作を受け付ける場合
-            this.scene.pointDownCapture.handle(this, this.onTouch);
+        if (typeof window !== "undefined" && window.RPGAtsumaru) {
+              // RPG アツマール上でのみ実行されるコード
+             
+            
+             var scoreboards = window.RPGAtsumaru.experimental.scoreboards;
+             scoreboards.setRecord(1, g.game.vars.gameState.score).then(function () {
+               window.setTimeout(function(){
+                     scoreboards.display(1);
+               }, 3000);
+             });
+              if (commonDefine_1.commonDefine.ENABLE_RETRY) {
+             // リトライ操作を受け付ける場合
+             this.scene.pointDownCapture.handle(this, this.onTouch);
+            }
         }
-  
     };
     /**
      * Scene#pointDownCaptureのハンドラ
