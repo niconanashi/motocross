@@ -88,9 +88,17 @@ window.addEventListener("load", function() {
 				height: window.innerHeight || document.documentElement.clientHeight
 			};
 			var gameScale = Math.min(
-				viewportSize.width / (game.width*1.3),
-				viewportSize.height / (game.height*1.3)
+				viewportSize.width / (game.width*1.5),
+				viewportSize.height / (game.height*1.5)
 			);
+			if (window.parent !== window) {
+                ameScale = Math.min(
+				  viewportSize.width / (game.width),
+				  viewportSize.height / (game.height)
+			   );
+            }
+
+
 			var gameSize = {
 				width: Math.floor(game.width * gameScale),
 				height: Math.floor(game.height * gameScale)
