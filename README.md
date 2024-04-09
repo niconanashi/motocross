@@ -1,7 +1,7 @@
 # Motocross
 
 こちらのページでプレイできます。
-https://game.nicovideo.jp/atsumaru/games/gm20577?key=63995490bbea
+ https://niconanashi.github.io/motocross.github.io/
 
 
 [Akashic Engine](https://akashic-games.github.io/) で作られたミニゲームです。
@@ -9,11 +9,7 @@ https://game.nicovideo.jp/atsumaru/games/gm20577?key=63995490bbea
 ![スクリーンショット](./img/screenshot.png)
 
 
-gameフォルダのディレクトリで以下のコマンドで akashic-sandbox が起動されます。実行後、 `http://localhost:3000/` にアクセスしてください。
 
-```
-akashic-sandbox
-```
 
 ## ライセンス
 
