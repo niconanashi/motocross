@@ -135,6 +135,7 @@ var WaveGame = /** @class */ (function (_super) {
         this.timerLabel.timeCaution.handle(this, this.onTimeCaution);
         this.timerLabel.timeCautionCancel.handle(this, this.onTimeCautionCancel);
         _super.prototype.showContent.call(this);
+        this.waveManager.onUpdate();//リスタート時の位置ズレ修正
     };
     /**
      * ゲームを開始するメソッド
