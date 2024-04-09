@@ -6,7 +6,7 @@
 
 [Akashic Engine](https://akashic-games.github.io/) で作られたミニゲームです。
 
-![スクリーンショット](./img/screenshot.png)
+![スクリーンショット](./screenshot.png)
 
 
 
