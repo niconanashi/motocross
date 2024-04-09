@@ -92,7 +92,7 @@ window.addEventListener("load", function() {
 				viewportSize.height / (game.height*1.5)
 			);
 			if (window.parent !== window) {
-                ameScale = Math.min(
+                            gameScale = Math.min(
 				  viewportSize.width / (game.width),
 				  viewportSize.height / (game.height)
 			   );
