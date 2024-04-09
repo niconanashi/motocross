@@ -88,8 +88,8 @@ window.addEventListener("load", function() {
 				height: window.innerHeight || document.documentElement.clientHeight
 			};
 			var gameScale = Math.min(
-				viewportSize.width / game.width,
-				viewportSize.height / game.height
+				viewportSize.width / (game.width*1.3),
+				viewportSize.height / (game.height*1.3)
 			);
 			var gameSize = {
 				width: Math.floor(game.width * gameScale),
